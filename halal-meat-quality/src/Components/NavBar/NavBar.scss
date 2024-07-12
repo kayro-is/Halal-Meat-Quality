@@ -1,10 +1,11 @@
 @import '../../App.scss';
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 5%;
+    padding: 20px 5%;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -23,6 +24,7 @@
     }
 
     .navbar {
+        display: flex;
         margin-top: -100px; // Ajustez cette valeur pour remonter la barre de navigation
 
         a {
@@ -46,6 +48,86 @@
             &:hover::before {
                 width: 100%;
             }
+        }
+    }
+
+    .burger {
+        display: none;
+        cursor: pointer;
+
+        div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+    }
+
+    @include mobile {
+        .navbar {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 5%;
+            position: absolute;
+            padding: 10px;
+            top: 70px;
+            left: 10px;
+
+            &.open {
+                display: flex;
+            }
+
+            a {
+                margin: 10px 0;
+            }
+        }
+
+        .burger {
+            display: block;
+        }
+    }
+
+    @include tablet {
+        .navbar {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            top: 70px;
+            left: 10px;
+
+            &.open {
+                display: flex;
+            }
+
+            a {
+                margin: 10px 0;
+            }
+        }
+
+        .burger {
+            display: block;
+        }
+    }
+
+    @include desktop {
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            position: static;
+            background: transparent;
+
+            a {
+                margin-left: 50px;
+            }
+        }
+
+        .burger {
+            display: none;
         }
     }
 }

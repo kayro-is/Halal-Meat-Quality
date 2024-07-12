@@ -7,34 +7,47 @@
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1366px) {
+    @content;
+  }
 }
 
 body {
-  background: url('../public/background.jpg') no-repeat ;
+  background: url('../public/background.jpg') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
+
+  @include mobile {
+    background: url('../public/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  @include tablet {
+    background: url('../public/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  @include desktop {
+    background: url('../public/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
 }
 
 a {
   text-decoration: none;
-}
-
-  
-  @mixin mobile{
-    @media (max-width: 738px){
-        @content;
-    }
-}
-
-@mixin tablet{
-    @media (max-width: 1024px){
-        @content;
-    }
-}
-
-@mixin desktop{
-    @media (min-width: 1366px){
-        @content;
-    }
 }
