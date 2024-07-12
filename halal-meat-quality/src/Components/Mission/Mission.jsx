@@ -4,7 +4,7 @@ import './Mission.scss'
 const Mission = () => {
   return (
     <div className='parallax'>
-        <div className='title'>
+        <div className='title-mission'>
         <h1>Nuestra misión</h1>
         </div>
         <div className="listContainer" >

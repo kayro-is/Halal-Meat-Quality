@@ -28,22 +28,17 @@
 }
 
 body {
-  background: url('../public/background2.jpg') no-repeat center center fixed;
+  background: url('../public/background3.jpg') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
 
   @include mobile {
-    background: url('../public/background2.jpg') no-repeat center center fixed;
+    background: url('../public/background3.jpg') no-repeat center center fixed;
     background-size: cover;
   }
 
   @include tablet {
-    background: url('../public/background2.jpg') no-repeat center center fixed;
-    background-size: cover;
-  }
-
-  @include desktop {
-    background: url('../public/background2.jpg') no-repeat center center fixed;
+    background: url('../public/background3.jpg') no-repeat center center fixed;
     background-size: cover;
   }
 }

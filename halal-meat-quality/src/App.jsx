@@ -2,17 +2,23 @@ import './App.scss'
 import Hero from './Components/Hero/Hero';
 import Mission from './Components/Mission/Mission';
 import NavBar from './Components/NavBar/NavBar'
+import Article from './Components/Article/Article';
 
 const App = () => {
   return (
     <div>
-      <section id="page d'accueil">
-    <NavBar />
-    <Hero />
-    </section>
-    <section id='service'>
-     <Mission />
-    </section>
+      <header id="page-d-accueil">
+        <NavBar />
+        <Hero />
+      </header>
+      <main>
+        <section id='service'>
+          <Mission type="services"/>
+        </section>
+        <section id='article'>
+          <Article type="article"/>
+        </section>
+      </main>
     </div>
   );
 }

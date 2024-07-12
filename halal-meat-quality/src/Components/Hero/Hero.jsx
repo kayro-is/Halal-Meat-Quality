@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <div className='hero'>
     <div className='title'>
-        <h1> Halal <span>Meat</span> Quality </h1>
-        <p>حلال طيب</p>
-        <h2>Organismo independiente de control y certificación de productos Halal.</h2>
+        <h1> <span>Halal</span> Meat Quality </h1>
+        <p><span className="highlight">حلال طيب</span></p>     
+           <h2>Organismo independiente de control y certificación de productos <span>Halal.</span></h2>
     </div>
     </div>
   );
