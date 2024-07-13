@@ -14,11 +14,11 @@ const NavBar = () => {
         <img src="/HMQ.png" alt="Logo" />
       </div>
       <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
-        <a href="/">Inicio</a>
+        <a href="#hero">Inicio</a>
         <a href="/">Presentación</a>
         <a href="/">Nuestros Socios</a>
-        <a href="/">Certificación</a>
-        <a href="/">Contacto</a>
+        <a href="#article">Certificación</a>
+        <a href="#contact">Contacto</a>
       </nav>
       <div className='burger' onClick={toggleMobileMenu}>
         <div className='line1'></div>

@@ -1,0 +1,144 @@
+@import "../../App.scss";
+
+.footer {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 60px;
+  
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+  
+      @include tablet {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+      flex: 1;
+      margin: 30px 20px;
+  
+      @include mobile {
+        margin: 10px 0;
+      }
+    }
+  
+    .footer-logo {
+      max-width: 150px;
+      margin-bottom: 10px;
+  
+      @include mobile {
+        max-width: 120px;
+      }
+    }
+  
+    .footer-address {
+      line-height: 1.6;
+  
+      a {
+        color: #b78032;
+        text-decoration: none;
+      }
+  
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .footer-social {
+      a {
+        margin-right: 10px;
+  
+        img {
+          width: 30px;
+          height: 30px;
+  
+          @include mobile {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  
+    .footer-form {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+  
+      .footer-input,
+      .footer-textarea {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+  
+        @include mobile {
+          padding: 8px;
+        }
+      }
+  
+      .footer-textarea {
+        height: 150px; // Agrandir la taille du textarea
+        @include mobile {
+          height: 80px; // Ajuster pour les mobiles si nécessaire
+        }
+      }
+  
+      .footer-button {
+        padding: 10px 20px;
+        background-color: #b78032;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #7c4c09;
+        }
+      }
+    }
+  
+    .footer-map {
+      iframe {
+        border: 0;
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+  
+        @include tablet {
+          width: 100%;
+          height: 200px;
+        }
+  
+        @include mobile {
+          width: 100%;
+          height: 150px;
+        }
+      }
+    }
+  
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+  
+      a {
+        color: #b78032;
+        text-decoration: none;
+      }
+  
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
