@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import { useState } from "react";
 import "./Contact.scss"
@@ -31,7 +30,7 @@ const Contact = () => {
   return (
     <div className='contact'>
         <div className="textContainer" >
-            <h1 >Travaillons ensemble</h1>
+            <h1>Contactez-nous</h1>
             <div className="item" >
                 <h2>mail</h2>
                 <span>mehadi.webdev@gmail.com</span>

@@ -20,14 +20,14 @@ const Footer = () => {
                         <a href="#"><img src="instagram-icon2.png" alt="Instagram" /></a>
                     </div>
                 </div>
-                <div className="footer-middle">
+         {/*   <div className="footer-middle">
           <h3>Vos Commentaires</h3>
           <form className="footer-form">
             <input type="email" placeholder="Votre email" className="footer-input" />
             <textarea placeholder="Message" className="footer-textarea"></textarea>
             <button type="submit" className="footer-button">Envoyer</button>
           </form>
-        </div>
+        </div>*/} 
                 <div className="footer-right">
                     <h3>Siège</h3>
                     <div className="footer-map">

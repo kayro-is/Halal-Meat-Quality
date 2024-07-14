@@ -29,6 +29,12 @@
       @include mobile {
         margin: 10px 0;
       }
+
+      h3{
+        margin-bottom: 20px ;
+        font-size: 25px;
+     
+      }
     }
   
     .footer-logo {
@@ -111,7 +117,7 @@
       iframe {
         border: 0;
         width: 100%;
-        height: 250px;
+        height: 300px;
         border-radius: 5px;
   
         @include tablet {
@@ -124,6 +130,7 @@
           height: 150px;
         }
       }
+
     }
   
     .footer-bottom {
