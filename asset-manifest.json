@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Halal-Meat-Quality/static/css/main.0bcb6042.css",
+    "main.js": "/Halal-Meat-Quality/static/js/main.0c54888b.js",
+    "static/js/234.cb8cbe22.chunk.js": "/Halal-Meat-Quality/static/js/234.cb8cbe22.chunk.js",
+    "static/media/background3.jpg": "/Halal-Meat-Quality/static/media/background3.0aa4653a26580741d2ec.jpg",
+    "index.html": "/Halal-Meat-Quality/index.html",
+    "main.0bcb6042.css.map": "/Halal-Meat-Quality/static/css/main.0bcb6042.css.map",
+    "main.0c54888b.js.map": "/Halal-Meat-Quality/static/js/main.0c54888b.js.map",
+    "234.cb8cbe22.chunk.js.map": "/Halal-Meat-Quality/static/js/234.cb8cbe22.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bcb6042.css",
+    "static/js/main.0c54888b.js"
+  ]
+}
